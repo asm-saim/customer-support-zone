@@ -1,7 +1,7 @@
 const Navbar = () => {
     return (
-        <div className="bg-gradient-to-r from-slate-800 via-gray-700 to-slate-800">
-            <div className="max-w-7xl mx-auto flex justify-between items-center py-4 px-5 ">
+        <div className="bg-linear-to-r from-slate-800 via-gray-700 to-slate-800">
+            <div className="max-w-7xl mx-auto flex justify-between items-center py-4 ">
                 <div className=" border-2 border-gray-500 px-5 py-1 rounded-md text-lg font-bold">
                     <h2>Customer Support - TS</h2>
                 </div>
@@ -14,7 +14,7 @@ const Navbar = () => {
                         <li><a href="">Blog</a></li>
                         <li><a href="">Download</a></li>
                         <li><a href="">Contact</a></li>
-                        <button className="border-none btn bg-linear-to-br from-blue-600 to-blue-800 text-base">+ New Ticket</button>
+                        <button className="border-none btn bg-linear-to-br from-blue-500 to-blue-800 text-base">+ New Ticket</button>
                     </ul>
 
 
