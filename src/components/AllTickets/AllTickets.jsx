@@ -2,9 +2,8 @@ import { use } from "react";
 import Ticket from "../Ticket/Ticket";
 import TasksSection from "../tasksSection/TasksSection";
 
-const AllTickets = ({ fetchData, customerTicket, setCustomerTicket }) => {
+const AllTickets = ({ fetchData, customerTicket, setCustomerTicket, handleResolved }) => {
     const promiseHandled = use(fetchData);
-
 
 
     return (
@@ -14,11 +13,13 @@ const AllTickets = ({ fetchData, customerTicket, setCustomerTicket }) => {
                     promiseHandled.map(tickets => <Ticket
                         customerTicket={customerTicket}
                         setCustomerTicket={setCustomerTicket}
-                        tickets={tickets}></Ticket>)
+                        tickets={tickets}
+                    ></Ticket>)
                 }
             </div>
             <div className=" col-span-3 border border-amber-300">
-                <TasksSection customerTicket={customerTicket}></TasksSection>
+                <TasksSection handleResolved={handleResolved} 
+                customerTicket={customerTicket}></TasksSection>
             </div>
 
         </div>

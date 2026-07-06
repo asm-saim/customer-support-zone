@@ -7,6 +7,7 @@ const Ticket = ({ tickets, customerTicket, setCustomerTicket }) => {
         setCustomerTicket([...customerTicket, tickets])
         toast.success("Customer Ticket Added!", { theme: 'dark' })
 
+
     }
 
     return (

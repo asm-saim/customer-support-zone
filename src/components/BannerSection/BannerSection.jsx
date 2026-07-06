@@ -1,6 +1,6 @@
 import bg from '../../assets/vector1.png'
 
-const BannerSection = ({ customerTicket }) => {
+const BannerSection = ({ customerTicket, resolvedTicket }) => {
     return (
         <div className="max-w-7xl mx-auto grid grid-cols-2 gap-10 my-16">
             <div className="relative overflow-hidden text-center py-20 rounded-lg font-bold text-3xl bg-linear-to-r from-blue-400 to-blue-900">
@@ -21,7 +21,7 @@ bg-linear-to-r from-teal-500 to-green-800 font-bold">
                 />
                 <div className="relative z-10">
                     <h2 className="text-3xl">Resolved</h2>
-                    <p className="text-4xl">0</p>
+                    <p className="text-4xl">{resolvedTicket.length}</p>
                 </div>
             </div>
         </div>

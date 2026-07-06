@@ -12,22 +12,30 @@ function App() {
 
   // state for extract data from card:
   const [customerTicket, setCustomerTicket] = useState([])
-  console.log(customerTicket)
+  const [resolvedTicket, setResolvedTicket] = useState([])
 
-  // state for inprogress section
-  // const [inProgress, setInProgress] = useState(0)
-  console.log(customerTicket.length)
+  // for inProgress section
+  // console.log(customerTicket.length)
+
+  //function for resolved section:
+  const handleResolved = (r) => {
+    // console.log("hae", r)
+    const filteredData = customerTicket.filter(ticket => ticket.id !== r.id)
+    setCustomerTicket(filteredData)
+    setResolvedTicket((prev) => [...prev, r])
+  }
 
   return (
     <>
       <Navbar></Navbar>
-      <BannerSection customerTicket={customerTicket}></BannerSection>
+      <BannerSection resolvedTicket={resolvedTicket} customerTicket={customerTicket}></BannerSection>
       <div className='max-w-7xl mx-auto  flex justify-between font-bold text-2xl my-2'>
         <h1>Customer Tickets</h1>
         <h1>Tasks Status</h1>
       </div>
       <AllTickets customerTicket={customerTicket}
         setCustomerTicket={setCustomerTicket} fetchData={fetchData}
+        handleResolved={handleResolved}
       ></AllTickets>
 
       <ToastContainer position="top-center" autoClose={3000} />
