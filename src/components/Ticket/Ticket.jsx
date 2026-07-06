@@ -1,8 +1,12 @@
+import { toast } from "react-toastify";
+
 const Ticket = ({ tickets, customerTicket, setCustomerTicket }) => {
 
     //placing an event listener:
     const handleCustomerCard = () => {
         setCustomerTicket([...customerTicket, tickets])
+        toast.success("Customer Ticket Added!", { theme: 'dark' })
+
     }
 
     return (

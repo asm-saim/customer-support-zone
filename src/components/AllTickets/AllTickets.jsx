@@ -9,7 +9,7 @@ const AllTickets = ({ fetchData, customerTicket, setCustomerTicket }) => {
 
     return (
         <div className="max-w-7xl mx-auto mb-10 grid grid-cols-11 gap-5 ">
-            <div className=" col-span-8 border grid grid-cols-2 gap-5  border-amber-300">
+            <div className=" col-span-8 grid grid-cols-2 gap-5">
                 {
                     promiseHandled.map(tickets => <Ticket
                         customerTicket={customerTicket}

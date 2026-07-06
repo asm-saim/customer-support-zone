@@ -3,9 +3,10 @@ import './App.css'
 import AllTickets from './components/AllTickets/AllTickets'
 import BannerSection from './components/BannerSection/BannerSection'
 import Navbar from './components/Navbar/Navbar'
+import { ToastContainer } from 'react-toastify';
 
 // fetch data from the api:
-const fetchData = fetch('/public/tickets.json').then(res => res.json())
+const fetchData = fetch('/tickets.json').then(res => res.json())
 
 function App() {
 
@@ -26,9 +27,10 @@ function App() {
         <h1>Tasks Status</h1>
       </div>
       <AllTickets customerTicket={customerTicket}
-        setCustomerTicket={setCustomerTicket} fetchData={fetchData}        
+        setCustomerTicket={setCustomerTicket} fetchData={fetchData}
       ></AllTickets>
 
+      <ToastContainer position="top-center" autoClose={3000} />
 
     </>
   )
