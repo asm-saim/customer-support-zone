@@ -46,7 +46,7 @@
     },
     {
         "id": "TCK-006",
-        "title": "Two-factor authentication not sending codes",
+        "title": "Two-factor auth. not sending codes",
         "description": "SMS codes for 2FA are delayed by over 20 minutes, locking customers out of their accounts temporarily.",
         "customer": "Daniel Miller",
         "priority": "High",
@@ -63,17 +63,8 @@
         "createdAt": "24/06/2026"
     },
     {
-        "id": "TCK-008",
-        "title": "UI text overlapping on small screens",
-        "description": "On devices with screen width below 360px, the settings page labels overlap with the toggle switches.",
-        "customer": "William Anderson",
-        "priority": "Low",
-        "status": "Resolved",
-        "createdAt": "19/06/2026"
-    },
-    {
         "id": "TCK-009",
-        "title": "API returning 500 errors intermittently",
+        "title": "API returning 500 errors",
         "description": "The /orders endpoint returns a 500 error roughly 1 in every 20 requests during peak hours.",
         "customer": "Ethan Martinez",
         "priority": "Critical",
@@ -97,15 +88,6 @@
         "priority": "Low",
         "status": "Open",
         "createdAt": "26/06/2026"
-    },
-    {
-        "id": "TCK-012",
-        "title": "Search results not updating",
-        "description": "Search filters applied on the products page do not update the result list until the page is manually refreshed.",
-        "customer": "Charlotte Harris",
-        "priority": "Medium",
-        "status": "Closed",
-        "createdAt": "18/06/2026"
     },
     {
         "id": "TCK-013",
