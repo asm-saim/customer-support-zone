@@ -2,8 +2,8 @@ const Navbar = () => {
     return (
         <div className="bg-linear-to-r from-slate-800 via-gray-700 to-slate-800">
             <div className="max-w-7xl mx-auto flex justify-between items-center py-4 ">
-                <div className=" border-2 border-gray-500 px-5 py-1 rounded-md text-lg font-bold">
-                    <h2>Customer Support - TS</h2>
+                <div className=" border-2 border-gray-500 px-4 py-1 rounded-tr-2xl text-lg font-bold">
+                    <h1><span className='text-blue-500'>CS</span> - Ticket System</h1>
                 </div>
 
                 <div className="flex items-center justify-between">

@@ -4,6 +4,7 @@ import AllTickets from './components/AllTickets/AllTickets'
 import BannerSection from './components/BannerSection/BannerSection'
 import Navbar from './components/Navbar/Navbar'
 import { ToastContainer } from 'react-toastify';
+import Footer from './components/Footer/Footer'
 
 // fetch data from the api:
 const fetchData = fetch('/tickets.json').then(res => res.json())
@@ -40,6 +41,8 @@ function App() {
         handleResolved={handleResolved}
         resolvedTicket={resolvedTicket}
       ></AllTickets>
+
+      <Footer></Footer>
 
       <ToastContainer position="top-center" autoClose={3000} />
 
