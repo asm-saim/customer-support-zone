@@ -3,15 +3,22 @@ import { toast } from "react-toastify";
 const Ticket = ({ tickets, customerTicket, setCustomerTicket }) => {
 
     //placing an event listener:
-    const handleCustomerCard = () => {
-        setCustomerTicket([...customerTicket, tickets])
-        toast.success("Customer Ticket Added!", { theme: 'dark' })
+const handleCustomerCard = () => {
+  const alreadyAdded = customerTicket.some(
+    (ticket) => ticket.id === tickets.id
+  );
 
+  if (alreadyAdded) {
+    toast.error("Ticket already added!", { theme: "dark" });
+    return;
+  }
 
-    }
+  setCustomerTicket([...customerTicket, tickets]);
+  toast.success("Customer Ticket Added!", { theme: "dark" });
+};
 
     return (
-        <div onClick={() => handleCustomerCard(tickets)} className="cursor-pointer rounded-lg p-3 bg-gray-800 border border-gray-600 ">
+        <div onClick={handleCustomerCard} className="cursor-pointer rounded-lg p-3 bg-gray-800 border border-gray-600 ">
             <div className="flex justify-between items-center">
                 <div>
                     <h1 className="text-lg font-bold">{tickets.title}</h1>

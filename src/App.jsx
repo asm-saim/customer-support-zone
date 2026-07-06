@@ -29,13 +29,16 @@ function App() {
     <>
       <Navbar></Navbar>
       <BannerSection resolvedTicket={resolvedTicket} customerTicket={customerTicket}></BannerSection>
-      <div className='max-w-7xl mx-auto  flex justify-between font-bold text-2xl my-2'>
-        <h1>Customer Tickets</h1>
-        <h1>Tasks Status</h1>
+      <div className='max-w-7xl mx-auto grid grid-cols-11 gap-5 my-2 font-bold text-2xl'>
+        <h1 className='col-span-8'>Customer Tickets</h1>
+        <h1 className='col-span-3'>Tasks Status</h1>
+
+
       </div>
       <AllTickets customerTicket={customerTicket}
         setCustomerTicket={setCustomerTicket} fetchData={fetchData}
         handleResolved={handleResolved}
+        resolvedTicket={resolvedTicket}
       ></AllTickets>
 
       <ToastContainer position="top-center" autoClose={3000} />
