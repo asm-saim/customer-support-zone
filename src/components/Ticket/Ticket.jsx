@@ -1,13 +1,14 @@
-const Ticket = ({ tickets, customerTicket, setCustomerTicket }) => {
+const Ticket = ({ tickets, customerTicket, setCustomerTicket, inProgress, setInProgress }) => {
 
     //placing an event listener:
-    const handleCustomerCard=()=>{
-        setCustomerTicket([...customerTicket,tickets])
+    const handleCustomerCard = () => {
+        setCustomerTicket([...customerTicket, tickets])
+        setInProgress(setCustomerTicket.length)
 
-    } 
+    }
 
     return (
-        <div onClick={()=>handleCustomerCard(tickets)} className="rounded-lg p-3 bg-gray-800 border border-gray-600 ">
+        <div onClick={() => handleCustomerCard(tickets)} className="rounded-lg p-3 bg-gray-800 border border-gray-600 ">
             <div className="flex justify-between items-center">
                 <div>
                     <h1 className="text-lg font-bold">{tickets.title}</h1>
@@ -35,10 +36,10 @@ const Ticket = ({ tickets, customerTicket, setCustomerTicket }) => {
                     <span>{tickets.id}</span>
                     <span
                         className={`font-bold ${tickets.priority === "High"
-                                ? "text-red-500"
-                                : tickets.priority === "Medium"
-                                    ? "text-yellow-500"
-                                    : "text-green-500"
+                            ? "text-red-500"
+                            : tickets.priority === "Medium"
+                                ? "text-yellow-500"
+                                : "text-green-500"
                             }`}
                     >
                         {tickets.priority}

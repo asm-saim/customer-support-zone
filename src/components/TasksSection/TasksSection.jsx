@@ -1,14 +1,14 @@
 import CustomerStat from "../CustomerStat/CustomerStat";
 
-const TasksSection = ({customerTicket}) => {
+const TasksSection = ({ customerTicket}) => {
 
     return (
         <div>
             {
-                customerTicket.map(customerStat=>
-                <CustomerStat customerStat={customerStat}></CustomerStat>)
+                customerTicket.map(customerStat =>
+                    <CustomerStat  customerStat={customerStat}></CustomerStat>)
             }
-            
+
         </div>
     );
 };
