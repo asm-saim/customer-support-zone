@@ -21,7 +21,7 @@ function App() {
     <>
       <Navbar></Navbar>
       <BannerSection customerTicket={customerTicket}></BannerSection>
-      <div className='max-w-7xl mx-auto  flex justify-between font-bold mt-5 text-2xl my-2'>
+      <div className='max-w-7xl mx-auto  flex justify-between font-bold text-2xl my-2'>
         <h1>Customer Tickets</h1>
         <h1>Tasks Status</h1>
       </div>

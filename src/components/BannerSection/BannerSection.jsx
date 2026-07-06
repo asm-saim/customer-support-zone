@@ -14,7 +14,7 @@ const BannerSection = ({ customerTicket }) => {
 
 
             <div className="relative overflow-hidden text-center py-20 rounded-lg
-bg-linear-to-r from-teal-500 to-teal-900 font-bold">
+bg-linear-to-r from-teal-500 to-green-800 font-bold">
                 <div
                     className="absolute inset-0 opacity-50 pointer-events-none"
                     style={{ backgroundImage: `url(${bg})`, backgroundSize: '100% 100%' }}
