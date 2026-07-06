@@ -1,7 +1,10 @@
+import { toast } from "react-toastify";
+
 const CustomerStat = ({ customerStat, handleResolved }) => {
 
     const handleComplete = () => {
         handleResolved(customerStat)
+        toast.success("Task Completed", { theme: 'dark' })
     }
 
     return (
