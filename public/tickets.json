@@ -1,0 +1,128 @@
+[
+    {
+        "id": "TCK-001",
+        "title": "Unable to reset password",
+        "description": "Customer clicks 'Forgot Password' but never receives the reset email, even after multiple attempts.",
+        "customer": "Alice Johnson",
+        "priority": "High",
+        "status": "Open",
+        "createdAt": "20/06/2026"
+    },
+    {
+        "id": "TCK-002",
+        "title": "App crashes on login",
+        "description": "Mobile app crashes immediately after entering valid credentials on Android 14 devices.",
+        "customer": "Michael Smith",
+        "priority": "Critical",
+        "status": "In Progress",
+        "createdAt": "21/06/2026"
+    },
+    {
+        "id": "TCK-003",
+        "title": "Invoice shows incorrect tax amount",
+        "description": "The generated invoice for June applies a 15% tax rate instead of the contracted 10% rate.",
+        "customer": "Emily Davis",
+        "priority": "Medium",
+        "status": "Open",
+        "createdAt": "22/06/2026"
+    },
+    {
+        "id": "TCK-004",
+        "title": "Feature request: dark mode",
+        "description": "Customer is requesting a dark mode theme option for the web dashboard.",
+        "customer": "James Wilson",
+        "priority": "Low",
+        "status": "Open",
+        "createdAt": "22/06/2026"
+    },
+    {
+        "id": "TCK-005",
+        "title": "Export to CSV fails silently",
+        "description": "Clicking the 'Export to CSV' button does nothing; no file is downloaded and no error message appears.",
+        "customer": "Sophia Brown",
+        "priority": "Medium",
+        "status": "In Progress",
+        "createdAt": "23/06/2026"
+    },
+    {
+        "id": "TCK-006",
+        "title": "Two-factor authentication not sending codes",
+        "description": "SMS codes for 2FA are delayed by over 20 minutes, locking customers out of their accounts temporarily.",
+        "customer": "Daniel Miller",
+        "priority": "High",
+        "status": "Open",
+        "createdAt": "24/06/2026"
+    },
+    {
+        "id": "TCK-007",
+        "title": "Billing charged twice",
+        "description": "Customer was charged twice for the same monthly subscription and is requesting a refund for the duplicate charge.",
+        "customer": "Olivia Taylor",
+        "priority": "Critical",
+        "status": "Open",
+        "createdAt": "24/06/2026"
+    },
+    {
+        "id": "TCK-008",
+        "title": "UI text overlapping on small screens",
+        "description": "On devices with screen width below 360px, the settings page labels overlap with the toggle switches.",
+        "customer": "William Anderson",
+        "priority": "Low",
+        "status": "Resolved",
+        "createdAt": "19/06/2026"
+    },
+    {
+        "id": "TCK-009",
+        "title": "API returning 500 errors intermittently",
+        "description": "The /orders endpoint returns a 500 error roughly 1 in every 20 requests during peak hours.",
+        "customer": "Ethan Martinez",
+        "priority": "Critical",
+        "status": "In Progress",
+        "createdAt": "25/06/2026"
+    },
+    {
+        "id": "TCK-010",
+        "title": "Cannot upload profile picture",
+        "description": "Uploading a JPEG profile picture larger than 2MB fails with a generic 'Upload failed' message.",
+        "customer": "Ava Thompson",
+        "priority": "Medium",
+        "status": "Open",
+        "createdAt": "25/06/2026"
+    },
+    {
+        "id": "TCK-011",
+        "title": "Request to merge duplicate accounts",
+        "description": "Customer accidentally created two accounts with different emails and wants them merged into one.",
+        "customer": "Benjamin White",
+        "priority": "Low",
+        "status": "Open",
+        "createdAt": "26/06/2026"
+    },
+    {
+        "id": "TCK-012",
+        "title": "Search results not updating",
+        "description": "Search filters applied on the products page do not update the result list until the page is manually refreshed.",
+        "customer": "Charlotte Harris",
+        "priority": "Medium",
+        "status": "Closed",
+        "createdAt": "18/06/2026"
+    },
+    {
+        "id": "TCK-013",
+        "title": "Notification emails going to spam",
+        "description": "Customers report that all transactional emails are being routed to their spam folder by Gmail.",
+        "customer": "Henry Clark",
+        "priority": "High",
+        "status": "In Progress",
+        "createdAt": "27/06/2026"
+    },
+    {
+        "id": "TCK-014",
+        "title": "Dashboard loading time too slow",
+        "description": "The analytics dashboard takes over 15 seconds to load for accounts with more than 10,000 records.",
+        "customer": "Grace Lewis",
+        "priority": "Medium",
+        "status": "Open",
+        "createdAt": "27/06/2026"
+    }
+]
