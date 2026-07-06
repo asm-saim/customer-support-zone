@@ -6,7 +6,7 @@ const AllTickets = ({ fetchData }) => {
 
     return (
         <div className="max-w-7xl mx-auto border border-amber-300 grid grid-cols-12 gap-10 ">
-            <div className=" col-span-8 border gird grid cols-2  border-amber-300">
+            <div className=" col-span-8 border grid grid-cols-2  border-amber-300">
                 {
                     promiseHandled.map(tickets => <Tickets tickets={tickets}></Tickets>)
                 }
