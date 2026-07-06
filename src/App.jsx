@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 import AllTickets from './components/AllTickets/AllTickets'
 import BannerSection from './components/BannerSection/BannerSection'
@@ -8,6 +9,10 @@ const fetchData = fetch('/public/tickets.json').then(res => res.json())
 
 function App() {
 
+  // take data from card:
+  const [customerTicket, setCustomerTicket] = useState([])
+  console.log(customerTicket)
+
   return (
     <>
       <Navbar></Navbar>
@@ -16,7 +21,8 @@ function App() {
         <h1>Customer Tickets</h1>
         <h1>Tasks Status</h1>
       </div>
-      <AllTickets fetchData={fetchData}></AllTickets>
+      <AllTickets customerTicket={customerTicket}
+        setCustomerTicket={setCustomerTicket} fetchData={fetchData}></AllTickets>
 
 
     </>

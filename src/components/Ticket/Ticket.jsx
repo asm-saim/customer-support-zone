@@ -1,6 +1,13 @@
-const Ticket = ({ tickets }) => {
+const Ticket = ({ tickets, customerTicket, setCustomerTicket }) => {
+
+    //placing an event listener:
+    const handleCustomerCard=()=>{
+        setCustomerTicket([...customerTicket,tickets])
+
+    } 
+
     return (
-        <div className="rounded-lg p-3 bg-gray-800 border border-gray-600 ">
+        <div onClick={()=>handleCustomerCard(tickets)} className="rounded-lg p-3 bg-gray-800 border border-gray-600 ">
             <div className="flex justify-between items-center">
                 <div>
                     <h1 className="text-lg font-bold">{tickets.title}</h1>
