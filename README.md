@@ -1,4 +1,4 @@
-<img src="./src/assets/logo.png" width="100"/>
+<img src="./src/assets/logo.png" />
 
 # Customer Support Zone
 
