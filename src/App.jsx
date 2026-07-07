@@ -30,12 +30,11 @@ function App() {
     <>
       <Navbar></Navbar>
       <BannerSection resolvedTicket={resolvedTicket} customerTicket={customerTicket}></BannerSection>
-      <div className='max-w-7xl mx-auto grid grid-cols-11 gap-5 my-2 font-bold text-2xl'>
-        <h1 className='col-span-8'>Customer Tickets</h1>
-        <h1 className='col-span-3'>Tasks Status</h1>
-
-
+      <div className="max-w-7xl mx-auto px-6 lg:px-0 grid grid-cols-1 lg:grid-cols-11 gap-4 lg:gap-5 my-4 font-bold">
+        <h1 className="lg:col-span-8 text-xl md:text-2xl">Customer Tickets</h1>
+        <h1 className="hidden lg:block lg:col-span-3 text-xl md:text-2xl">Tasks Status</h1>
       </div>
+
       <AllTickets customerTicket={customerTicket}
         setCustomerTicket={setCustomerTicket} fetchData={fetchData}
         handleResolved={handleResolved}
