@@ -1,8 +1,6 @@
-import React from 'react';
-
 const Footer = () => {
     return (
-        <footer class="footer bg-gray-800 justify-items-center text-center  sm:footer-horizontal bg-base-200 text-base-content p-10">
+        <footer class="footer bg-gray-800 justify-items-center text-center  sm:footer-horizontal text-base-content p-10">
             <aside>
                 <h1 className='font-extrabold text-5xl'>CS-<span className='text-blue-600'>Tech</span></h1>
 
