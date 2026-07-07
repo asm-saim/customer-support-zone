@@ -118,7 +118,6 @@ The application provides an interactive experience where users can:
 - Search tickets by title or customer
 - Filter by priority and status
 - Sort tickets by created date
-- Dark mode
 - Backend API integration
 - User authentication
 - Drag-and-drop task management
